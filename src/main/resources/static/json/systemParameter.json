@@ -1,0 +1,14 @@
+{
+	"cmsName": "长虹佳华Avaya云体验中心网站",
+	"version": "v2.0",
+	"author": "孙宏宇",
+	"homePage": "cpaas.changhongit.com",
+	"server": "Kubernetes v1.19.0",
+	"dataBase": "Mysql 5.7.0",
+	"maxUpload": "50",
+	"userRights": "孙宏宇",
+	"description": "连接伙伴，帮助成长",
+	"powerby": "copyright @2021 长虹佳华",
+	"record": "",
+	"keywords": "长虹佳华Avaya云体验中心网站"
+}

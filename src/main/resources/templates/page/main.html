@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	  xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<base th:href="@{/}">
+<head>
+	<meta charset="utf-8">
+	<title>首页--后台管理</title>
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="layui/css/layui.css" media="all" />
+	<link rel="stylesheet" href="css/public.css" media="all" />
+</head>
+<body class="childrenBody">
+	<blockquote class="layui-elem-quote layui-bg-green">
+		<div id="nowTime"></div>
+	</blockquote>
+	<div class="layui-row layui-col-space10 panel_box">
+		<div class="panel layui-col-xs12 layui-col-sm6 layui-col-md4 layui-col-lg2">
+			<a href="javascript:;" data-url="http://fly.layui.com/case/u/3198216" target="_blank">
+				<div class="panel_icon layui-bg-green">
+					<i class="layui-anim seraph icon-good"></i>
+				</div>
+				<div class="panel_word">
+					<span>网站报表预留</span>
+					<cite>网站累计登录人数</cite>
+				</div>
+			</a>
+		</div>
+		<div class="panel layui-col-xs12 layui-col-sm6 layui-col-md4 layui-col-lg2">
+			<a href="javascript:;" data-url="https://github.com/BrotherMa/layuicms2.0" target="_blank">
+				<div class="panel_icon layui-bg-black">
+					<i class="layui-anim seraph icon-github"></i>
+				</div>
+				<div class="panel_word">
+					<span>文档管理预留</span>
+					<cite>当前开通功能模块</cite>
+				</div>
+			</a>
+		</div>
+		<div class="panel layui-col-xs12 layui-col-sm6 layui-col-md4 layui-col-lg2">
+			<a href="javascript:;" data-url="https://gitee.com/layuicms/layuicms2.0" target="_blank">
+				<div class="panel_icon layui-bg-red">
+					<i class="layui-anim seraph icon-oschina"></i>
+				</div>
+				<div class="panel_word">
+					<span sec:authentication="details.remoteAddress"></span>
+					<cite>您的IP地址</cite>
+				</div>
+			</a>
+		</div>
+		<div class="panel layui-col-xs12 layui-col-sm6 layui-col-md4 layui-col-lg2">
+			<a href="javascript:;" data-url="page/user/userList.html">
+				<div class="panel_icon layui-bg-orange">
+					<i class="layui-anim seraph icon-icon10" data-icon="icon-icon10"></i>
+				</div>
+				<div class="panel_word userAll">
+					<span></span>
+					<em>测试分机数量</em>
+					<cite class="layui-hide">用户中心</cite>
+				</div>
+			</a>
+		</div>
+		<div class="panel layui-col-xs12 layui-col-sm6 layui-col-md4 layui-col-lg2">
+			<a href="javascript:;" data-url="page/systemSetting/icons.html">
+				<div class="panel_icon layui-bg-cyan">
+					<i class="layui-anim layui-icon" data-icon="&#xe857;">&#xe857;</i>
+				</div>
+				<div class="panel_word outIcons">
+					<span></span>
+					<em>网站注册人数</em>
+					<cite class="layui-hide">图标管理</cite>
+				</div>
+			</a>
+		</div>
+		<div class="panel layui-col-xs12 layui-col-sm6 layui-col-md4 layui-col-lg2">
+			<a href="javascript:;">
+				<div class="panel_icon layui-bg-blue">
+					<i class="layui-anim seraph icon-clock"></i>
+				</div>
+				<div class="panel_word">
+					<span class="loginTime"></span>
+					<cite>上次登录时间</cite>
+				</div>
+			</a>
+		</div>
+	</div>
+	<div class="layui-col-lg6 layui-col-md12">
+		<blockquote class="layui-elem-quote title">长虹佳华Avaya云体验中心概述</blockquote>
+		<div class="layui-elem-quote layui-quote-nm history_box magb0">
+			<ul class="layui-timeline">
+				<li class="layui-timeline-item">
+					<i class="layui-icon layui-timeline-axis">&#xe756;</i>
+					<div class="layui-timeline-content layui-text">
+						<div class="layui-timeline-title">
+							<h3 class="layui-inline">深耕需求 智慧赋能 联接好伙伴，<span class="layui-red">Cpaas平台2.0版本</span>发布　</h3>
+							<span class="layui-badge-rim">2021-02-05</span>
+						</div>
+						<ul>
+							<li>
+								<blockquote class="layui-elem-quote title">欢迎来到长虹佳华Avaya云体验中心，这里有</blockquote>
+							</li>
+							<li class="layui-blue">Avaya 统一通信解决方案体验</li>
+							<li class="layui-blue">Avaya 联络中心解决方案体验</li>
+							<li class="layui-blue">Avaya IPO解决方案体验</li>
+							<li class="layui-blue">Avaya高可靠性体验</li>
+							<li class="layui-blue">基于企业办公通讯场景体验</li>
+							<li class="layui-blue">基于联络中心场景体验</li>
+						</ul>
+					</div>
+				</li>
+				<li class="layui-timeline-item">
+					<i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+					<div class="layui-timeline-content layui-text">
+						<div class="layui-timeline-title">
+							<h3 class="layui-inline">Cpaas平台组件</h3>
+							<span class="layui-badge-rim">2020-12-12</span>
+						</div>
+						<div class="layui-timeline-title">
+							<h3 class="layui-inline">IT基础架构</h3>
+							<span class="layui-badge-rim">2020-12-12</span>
+						</div>
+						<ul>
+							<li>LDAP服务（Windows2016 Active Directory）</li>
+							<li>NTP服务</li>
+							<li>K8S 1.19.0  &   Docker 18.09.7</li>
+							<li>Web容器</li>
+							<li>数据库   Mysql 5.7.0</li>
+							<li>Nginx</li>
+							<li>华为交换机  &  防火墙</li>
+							<li>HP服务器或存储设备</li>
+							<li>VMWare 6.7</li>
+						</ul>
+					</div>
+				</li>
+				<li class="layui-timeline-item">
+					<i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+					<div class="layui-timeline-content layui-text">
+
+						<div class="layui-timeline-title">
+							<h3 class="layui-inline">Avaya Aura基础架构</h3>
+							<span class="layui-badge-rim">2020-12-12</span>
+						</div>
+						<ul>
+							<li>System Manager 8.1</li>
+							<li>Session Manage 8.1</li>
+							<li>Communication Manager 8.1</li>
+							<li>Application Enablement Services 8.1</li>
+							<li>Avaya Session Border Controller for Enterprise 8.1</li>
+							<li>Avaya Aura Device Services 8.0.2</li>
+							<li>Avaya Aura® Presence Services 3.7</li>
+							<li>Avaya Aura® Utility Services 8.0.2</li>
+							<li>Avaya Media Server 8.1 </li>
+						</ul>
+					</div>
+				</li>
+				<li class="layui-timeline-item">
+					<i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+					<div class="layui-timeline-content layui-text">
+
+						<div class="layui-timeline-title">
+							<h3 class="layui-inline">Avaya CC基础架构</h3>
+							<span class="layui-badge-rim">2020-12-12</span>
+						</div>
+						<ul>
+							<li>Avaya Aura® Call Center Elite 8.1</li>
+							<li>Avaya Aura® Experience Portal 7.2.1</li>
+							<li>Avaya Aura® Workforce Optimization 15.1</li>
+							<li>Call Management System 19.1</li>
+						</ul>
+					</div>
+				</li>
+				<li class="layui-timeline-item">
+					<i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+					<div class="layui-timeline-content layui-text">
+
+						<div class="layui-timeline-title">
+							<h3 class="layui-inline">Avaya 团队协助框架</h3>
+							<span class="layui-badge-rim">2020-12-12</span>
+						</div>
+						<ul>
+							<li>Avaya Equinox® Management 9.1</li>
+							<li>Avaya Equinox® Media Server 9.1</li>
+							<li>Avaya Aura® Web Gateway 3.8.1</li>
+							<li>Avaya Media Server 8.1 </li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<blockquote class="layui-elem-quote title">最新文章 <i class="layui-icon layui-red">&#xe756;</i></blockquote>
+	<table class="layui-table mag0" lay-skin="line">
+		<colgroup>
+			<col>
+			<col width="110">
+		</colgroup>
+		<tbody class="hot_news"></tbody>
+	</table>
+	<div class="layui-row layui-col-space10">
+		<div class="layui-col-lg6 layui-col-md12">
+			<blockquote class="layui-elem-quote title">系统基本参数</blockquote>
+			<table class="layui-table magt0">
+				<colgroup>
+					<col width="150">
+					<col>
+				</colgroup>
+				<tbody>
+				<tr>
+					<td>当前版本</td>
+					<td class="version"></td>
+				</tr>
+				<tr>
+					<td>网站管理员</td>
+					<td class="author"></td>
+				</tr>
+				<tr>
+					<td>网站首页</td>
+					<td class="homePage"></td>
+				</tr>
+				<tr>
+					<td>服务器环境</td>
+					<td class="server"></td>
+				</tr>
+				<tr>
+					<td>数据库版本</td>
+					<td class="dataBase"></td>
+				</tr>
+				<tr>
+					<td>最大上传限制</td>
+					<td class="maxUpload"></td>
+				</tr>
+				<tr>
+					<td>开发者</td>
+					<td class="userRights"></td>
+				</tr>
+				</tbody>
+			</table>
+
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="layui/layui.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

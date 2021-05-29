@@ -1,0 +1,44 @@
+<html>
+<head>
+    <title>Demo</title>
+    <script>
+        function postForm(){
+
+            var eve1 =        document.getElementById("eventVal1").value;
+            //{'customerid':'111111'}
+            if(eve1==""){
+                alert("不能为空");
+                return false;
+            }
+            var eve2 =        document.getElementById("eventVal2").value;
+            //{'customerid':'111111'}
+            if(eve1==""){
+                alert("不能为空");
+                return false;
+            }
+            document.getElementById("eventBody").value = "{'caller':'"+eve1+"','called':'"+eve2+"'}";
+
+            var subForm = document.getElementById('subForm');
+
+            subForm.submit();
+
+        }
+    </script>
+
+
+</head>
+<form id="subForm" action="http://192.168.3.46/services/EventingConnector/events" method="POST" enctype="multipart/form-data">
+
+    <input type="hidden" name="family" value="HttpRequest"/>
+    <input type="hidden" name="type" value="HttpRequest"/>
+    <input type="hidden" name="version" value="1"/>
+    <input  type="hidden" id="eventBody" name="eventBody" value=""/>
+    呼叫号码：<input  type="text" id="eventVal1" value="420001"/>
+    被呼叫号码：<input  type="text" id="eventVal2" value="420003"/>
+    <input type="button" name="Demo1" onclick="postForm()" value="submit"/>
+
+</form>
+
+
+
+</html>
